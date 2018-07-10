@@ -14,7 +14,7 @@ class MinStack(object):
         :rtype: void
         """
         self.stack.append(x)
-        if len(self.MinStack) == 0 or x < self.MinStack[-1]:
+        if len(self.MinStack) == 0 or x <= self.MinStack[-1]:
             self.MinStack.append(x)
         
 
